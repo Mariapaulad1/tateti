@@ -1,0 +1,113 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    /*background-color: lightsalmon;*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #70ABAF;
+    color: #000;
+    font-family: 'Patrick Hand', handwriting;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: mediumaquamarine;
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 30%;
+    width: 250px;
+    cursor: pointer;
+}
+
+header:hover {
+    background-color: none;
+    color: none;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+header, .tablero {
+    font-family: 'Patrick Hand', handwriting;
+}
+
+.tablero {
+    /*background-color: white;*/
+    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 10rem;
+}
+
+.tabla {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #000;
+    border-radius: 3px;
+    border-left: none;
+    border-top: none;
+    cursor: pointer;
+    transition: 1s;
+    opacity: 1;
+}
+
+#t3, #t6, #t9 {
+  border-right: none;
+}
+
+#t7, #t8, #t9 {
+    border-bottom: none;
+}
+
+.swal-footer {
+  margin-top: 32px;
+  border-top: 1px solid orange;
+  overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+  font-size: 30px;
+}
+
+.swal-button:hover {
+  background-color: #000;
+    color: #fff;
+}
+
+.win {
+    color: #3AB7FF;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+   .tablero {
+        width: 300px;
+        height: 300px;
+        margin-top: 60px;
+        font-size: 4rem;
+    }
+}
